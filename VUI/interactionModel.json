@@ -1,0 +1,44 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "covid tracker",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "stateLookupIntent",
+                    "slots": [
+                        {
+                            "name": "state",
+                            "type": "AMAZON.US_STATE"
+                        }
+                    ],
+                    "samples": [
+                        "{state}",
+                        "tests in {state}",
+                        "how many tests are in {state}",
+                        "how many tests in {state}",
+                        "what are the number of cases in {state}",
+                        "how many cases are there in {state}",
+                        "how many cases in {state}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
